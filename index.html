@@ -7,9 +7,23 @@
   <meta name="description" content="Hattenburg Masonry LLC — premier Los Angeles masonry contractor. C-29 licensed for all cementitious applications: custom outdoor fireplaces, stone veneer, structural block, wall floats, brick modification, and Solomon & Davis mortar color matching. License #1066248. Call 323-542-1884." />
   <meta name="keywords" content="masonry contractor Los Angeles, C-29 contractor, custom outdoor fireplace, Kentucky stone veneer, stone facade LA, mortar color matching, Solomon Davis, structural block work" />
   <meta name="theme-color" content="#0c0a09" />
+  <link rel="canonical" href="https://tobyhattenburg-beep.github.io/hattenburg-masonry/" />
+
+  <!-- Favicon: gold HM monogram on ink (inline SVG, no external request) -->
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='13' fill='%230c0a09'/%3E%3Crect x='3' y='3' width='58' height='58' rx='11' fill='none' stroke='%23c9a24b' stroke-width='2.5'/%3E%3Ctext x='32' y='43' font-family='Georgia,serif' font-size='27' font-weight='700' text-anchor='middle' fill='%23c9a24b'%3EHM%3C/text%3E%3C/svg%3E" />
+  <link rel="apple-touch-icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='13' fill='%230c0a09'/%3E%3Ctext x='32' y='43' font-family='Georgia,serif' font-size='27' font-weight='700' text-anchor='middle' fill='%23c9a24b'%3EHM%3C/text%3E%3C/svg%3E" />
+
+  <!-- Open Graph / social -->
   <meta property="og:type" content="website" />
   <meta property="og:title" content="Hattenburg Masonry LLC | High-End Masonry Contractor in Los Angeles" />
   <meta property="og:description" content="C-29 licensed masonry craftsmanship — custom fireplaces, stone veneer, and bespoke mortar color matching across Los Angeles." />
+  <meta property="og:url" content="https://tobyhattenburg-beep.github.io/hattenburg-masonry/" />
+  <meta property="og:image" content="https://tobyhattenburg-beep.github.io/hattenburg-masonry/images/proj32.jpg" />
+  <meta property="og:site_name" content="Hattenburg Masonry LLC" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Hattenburg Masonry LLC | High-End Masonry Contractor in Los Angeles" />
+  <meta name="twitter:description" content="C-29 licensed masonry craftsmanship — custom fireplaces, stone veneer, and bespoke mortar color matching across Los Angeles." />
+  <meta name="twitter:image" content="https://tobyhattenburg-beep.github.io/hattenburg-masonry/images/proj32.jpg" />
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -60,6 +74,16 @@
     ::selection { background:#c9a24b; color:#1c1917; }
     /* Placeholder visual styling */
     .ph { display:flex; align-items:center; justify-content:center; text-align:center; }
+    /* Portfolio filter chips */
+    .filter-chip { border-color:#d4d1cb; color:#3a3531; background:#fff; }
+    .filter-chip:hover { border-color:#c9a24b; color:#a07d2e; }
+    .filter-chip.is-active { background:#0c0a09; border-color:#0c0a09; color:#c9a24b; }
+    .gallery-item.is-hidden { display:none; }
+    /* FAQ accordions */
+    .faq-item summary { list-style:none; cursor:pointer; }
+    .faq-item summary::-webkit-details-marker { display:none; }
+    .faq-item summary .faq-icon { transition:transform .3s ease; }
+    .faq-item[open] summary .faq-icon { transform:rotate(45deg); }
   </style>
 
   <script type="application/ld+json">
@@ -68,11 +92,68 @@
     "@type": "GeneralContractor",
     "name": "Hattenburg Masonry LLC",
     "description": "C-29 licensed Los Angeles masonry contractor specializing in custom outdoor fireplaces, stone veneer, structural block, wall floats, brick modification, and bespoke mortar color matching.",
+    "url": "https://tobyhattenburg-beep.github.io/hattenburg-masonry/",
+    "image": "https://tobyhattenburg-beep.github.io/hattenburg-masonry/images/proj32.jpg",
     "telephone": "+1-323-542-1884",
     "email": "hattenburgmasonry84@gmail.com",
-    "areaServed": "Los Angeles, CA",
+    "priceRange": "$$$",
     "address": { "@type": "PostalAddress", "addressLocality": "Los Angeles", "addressRegion": "CA", "addressCountry": "US" },
-    "priceRange": "$$$"
+    "geo": { "@type": "GeoCoordinates", "latitude": 34.0522, "longitude": -118.2437 },
+    "areaServed": [
+      { "@type": "City", "name": "Los Angeles" },
+      { "@type": "City", "name": "Pasadena" },
+      { "@type": "City", "name": "Glendale" },
+      { "@type": "City", "name": "Burbank" },
+      { "@type": "City", "name": "La Cañada Flintridge" },
+      { "@type": "City", "name": "San Marino" },
+      { "@type": "City", "name": "Arcadia" },
+      { "@type": "City", "name": "Sherman Oaks" },
+      { "@type": "City", "name": "Studio City" },
+      { "@type": "City", "name": "Los Feliz" },
+      { "@type": "City", "name": "Silver Lake" },
+      { "@type": "City", "name": "South Pasadena" }
+    ],
+    "knowsAbout": ["Structural Block Work", "Stone Veneer", "Wall Floats", "Brick Modification", "Mortar Color Matching", "Custom Outdoor Fireplaces"],
+    "hasCredential": "C-29 Masonry Contractor License #1066248"
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Are you a licensed masonry contractor?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Yes. Hattenburg Masonry LLC holds an active California C-29 Masonry Contractor license (#1066248), which covers the full range of cementitious applications — from structural block to finish stonework." }
+      },
+      {
+        "@type": "Question",
+        "name": "What areas do you serve?",
+        "acceptedAnswer": { "@type": "Answer", "text": "We serve Greater Los Angeles, including Pasadena, Glendale, Burbank, La Cañada Flintridge, San Marino, Arcadia, Sherman Oaks, Studio City, Los Feliz, Silver Lake, and South Pasadena." }
+      },
+      {
+        "@type": "Question",
+        "name": "Do you provide free estimates?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Yes. Request a consultation through the form on this site or call 323-542-1884, and we'll review your project and follow up — typically within one business day — to schedule a walkthrough and estimate." }
+      },
+      {
+        "@type": "Question",
+        "name": "How long does a typical masonry project take?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Timelines depend on scope. A stone-veneer fireplace or feature wall may take one to two weeks, while a full façade or structural project runs longer. We give a realistic schedule with your estimate and keep you updated throughout." }
+      },
+      {
+        "@type": "Question",
+        "name": "Can you match the color of existing mortar?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Yes. We use exact Solomon & Davis mortar color matching so repairs, additions, and repointing blend seamlessly into the original work." }
+      },
+      {
+        "@type": "Question",
+        "name": "Do you take on both residential and commercial work?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Our focus is high-end residential masonry for homeowners, architects, and builders, though we also take on select commercial and architectural projects. Reach out with your details and we'll let you know if it's a fit." }
+      }
+    ]
   }
   </script>
 </head>
@@ -100,10 +181,12 @@
         </span>
       </a>
 
-      <div class="hidden lg:flex items-center gap-9 text-sm font-medium text-mist-200">
+      <div class="hidden lg:flex items-center gap-7 text-sm font-medium text-mist-200">
         <a href="#services" class="nav-link hover:text-gold transition-colors">Services</a>
-        <a href="#expertise" class="nav-link hover:text-gold transition-colors">Expertise</a>
+        <a href="#process" class="nav-link hover:text-gold transition-colors">Process</a>
         <a href="#portfolio" class="nav-link hover:text-gold transition-colors">Portfolio</a>
+        <a href="#areas" class="nav-link hover:text-gold transition-colors">Service Area</a>
+        <a href="#faq" class="nav-link hover:text-gold transition-colors">FAQ</a>
         <a href="#contact" class="nav-link hover:text-gold transition-colors">Contact</a>
       </div>
 
@@ -122,8 +205,10 @@
     <div id="mobileMenu" class="lg:hidden hidden border-t border-white/10 bg-ink-950">
       <div class="px-6 py-4 flex flex-col gap-1 text-base font-medium text-mist-200">
         <a href="#services" class="py-2.5 hover:text-gold mobile-link">Services</a>
-        <a href="#expertise" class="py-2.5 hover:text-gold mobile-link">Expertise</a>
+        <a href="#process" class="py-2.5 hover:text-gold mobile-link">Process</a>
         <a href="#portfolio" class="py-2.5 hover:text-gold mobile-link">Portfolio</a>
+        <a href="#areas" class="py-2.5 hover:text-gold mobile-link">Service Area</a>
+        <a href="#faq" class="py-2.5 hover:text-gold mobile-link">FAQ</a>
         <a href="#contact" class="py-2.5 hover:text-gold mobile-link">Contact</a>
         <a href="tel:+13235421884" class="mt-2 text-center border border-gold text-gold py-3 rounded-sm">Call 323-542-1884</a>
         <a href="#contact" class="text-center gold-btn font-bold py-3 rounded-sm mobile-link">Request Consultation</a>
@@ -255,8 +340,61 @@
     </div>
   </section>
 
+  <!-- ============ OUR PROCESS ============ -->
+  <section id="process" class="texture-grid py-24 lg:py-32">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="max-w-3xl mb-16 fade-up">
+        <p class="text-brick font-semibold tracking-widest2 uppercase text-xs mb-4">How We Work</p>
+        <h2 class="font-display text-3xl sm:text-5xl font-bold leading-tight mb-6">A Clear, Disciplined Process — Start to Finish.</h2>
+        <p class="text-ink-700 text-lg leading-relaxed">No surprises, no shortcuts. From the first walkthrough to the final inspection, every project follows the same four-step process that keeps quality high and communication clear.</p>
+      </div>
+
+      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <!-- STEP 1 -->
+        <div class="fade-up relative bg-white border border-mist-200 rounded-sm p-8 hover:border-gold hover:shadow-xl transition-all">
+          <span class="font-display text-5xl font-bold text-mist-200 leading-none">01</span>
+          <div class="w-11 h-11 bg-ink-950 text-gold flex items-center justify-center rounded-sm my-5">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M8.625 12a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0H8.25m4.125 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0H12m4.125 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0h-.375M21 12c0 4.556-4.03 8.25-9 8.25a9.764 9.764 0 01-2.555-.337A5.972 5.972 0 015.41 20.97a5.969 5.969 0 01-.474-.065 4.48 4.48 0 00.978-2.025c.09-.457-.133-.901-.467-1.226C3.93 16.178 3 14.189 3 12c0-4.556 4.03-8.25 9-8.25s9 3.694 9 8.25z"/></svg>
+          </div>
+          <h3 class="font-display text-xl font-semibold mb-3">Consultation</h3>
+          <p class="text-ink-700 leading-relaxed text-[0.95rem]">We visit the site, listen to your goals, and assess the structure and scope — so the plan fits the real conditions, not a guess.</p>
+        </div>
+
+        <!-- STEP 2 -->
+        <div class="fade-up relative bg-white border border-mist-200 rounded-sm p-8 hover:border-gold hover:shadow-xl transition-all" style="transition-delay:.05s">
+          <span class="font-display text-5xl font-bold text-mist-200 leading-none">02</span>
+          <div class="w-11 h-11 bg-ink-950 text-gold flex items-center justify-center rounded-sm my-5">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12h3.75M9 15h3.75M9 18h3.75m3 .75H18a2.25 2.25 0 002.25-2.25V6.108c0-1.135-.845-2.098-1.976-2.192a48.424 48.424 0 00-1.123-.08m-5.801 0c-.065.21-.1.433-.1.664 0 .414.336.75.75.75h4.5a.75.75 0 00.75-.75 2.25 2.25 0 00-.1-.664m-5.8 0A2.251 2.251 0 0113.5 2.25H15c1.012 0 1.867.668 2.15 1.586m-5.8 0c-.376.023-.75.05-1.124.08C9.095 4.01 8.25 4.973 8.25 6.108V8.25m0 0H4.875c-.621 0-1.125.504-1.125 1.125v11.25c0 .621.504 1.125 1.125 1.125h9.75c.621 0 1.125-.504 1.125-1.125V9.375c0-.621-.504-1.125-1.125-1.125H8.25z"/></svg>
+          </div>
+          <h3 class="font-display text-xl font-semibold mb-3">Design &amp; Estimate</h3>
+          <p class="text-ink-700 leading-relaxed text-[0.95rem]">You get a clear scope, material selections, a realistic timeline, and a detailed written estimate — no vague numbers.</p>
+        </div>
+
+        <!-- STEP 3 -->
+        <div class="fade-up relative bg-white border border-mist-200 rounded-sm p-8 hover:border-gold hover:shadow-xl transition-all" style="transition-delay:.1s">
+          <span class="font-display text-5xl font-bold text-mist-200 leading-none">03</span>
+          <div class="w-11 h-11 bg-ink-950 text-gold flex items-center justify-center rounded-sm my-5">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M11.42 15.17L17.25 21A2.652 2.652 0 0021 17.25l-5.877-5.877M11.42 15.17l2.496-3.03c.317-.384.74-.626 1.208-.766M11.42 15.17l-4.655 5.653a2.548 2.548 0 11-3.586-3.586l6.837-5.63m5.108-.233c.55-.164 1.163-.188 1.743-.14a4.5 4.5 0 004.486-6.336l-3.276 3.277a3.004 3.004 0 01-2.25-2.25l3.276-3.276a4.5 4.5 0 00-6.336 4.486c.091 1.076-.071 2.264-.904 2.95l-.102.085m-1.745 1.437L5.909 7.5H4.5L2.25 3.75l1.5-1.5L7.5 4.5v1.409l4.26 4.26"/></svg>
+          </div>
+          <h3 class="font-display text-xl font-semibold mb-3">Build</h3>
+          <p class="text-ink-700 leading-relaxed text-[0.95rem]">Skilled hands, exacting tolerances, and a clean site. We build to code and to the finish standard the project deserves.</p>
+        </div>
+
+        <!-- STEP 4 -->
+        <div class="fade-up relative bg-ink-950 text-white rounded-sm p-8 hover:shadow-xl transition-all" style="transition-delay:.15s">
+          <span class="font-display text-5xl font-bold text-white/15 leading-none">04</span>
+          <div class="w-11 h-11 bg-gold text-ink-950 flex items-center justify-center rounded-sm my-5">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+          </div>
+          <h3 class="font-display text-xl font-semibold mb-3 text-gold">Finish &amp; Walkthrough</h3>
+          <p class="text-mist-300 leading-relaxed text-[0.95rem]">We detail the finish, clean up completely, and walk the work with you — the job isn't done until you're satisfied.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- ============ PORTFOLIO ============ -->
-  <section id="portfolio" class="py-24 lg:py-32 texture-grid">
+  <section id="portfolio" class="py-24 lg:py-32 bg-white">
     <div class="max-w-7xl mx-auto px-6">
       <div class="max-w-2xl mb-14 fade-up">
         <p class="text-brick font-semibold tracking-widest2 uppercase text-xs mb-4">Featured Projects</p>
@@ -264,10 +402,19 @@
         <p class="text-ink-700 text-lg leading-relaxed">A selection of recent work across Greater Los Angeles — from finished stone façades to the structural precision beneath the finish. Tap any image to view it full size.</p>
       </div>
 
+      <!-- Category filter chips -->
+      <div id="galleryFilters" class="flex flex-wrap gap-2.5 mb-8 fade-up">
+        <button type="button" class="filter-chip is-active text-xs sm:text-sm font-semibold tracking-wide px-4 py-2 rounded-sm border transition-colors" data-filter="all">All Work</button>
+        <button type="button" class="filter-chip text-xs sm:text-sm font-semibold tracking-wide px-4 py-2 rounded-sm border transition-colors" data-filter="veneer">Stone Veneer</button>
+        <button type="button" class="filter-chip text-xs sm:text-sm font-semibold tracking-wide px-4 py-2 rounded-sm border transition-colors" data-filter="hardscape">Hardscape</button>
+        <button type="button" class="filter-chip text-xs sm:text-sm font-semibold tracking-wide px-4 py-2 rounded-sm border transition-colors" data-filter="structural">Structural</button>
+        <button type="button" class="filter-chip text-xs sm:text-sm font-semibold tracking-wide px-4 py-2 rounded-sm border transition-colors" data-filter="architectural">Architectural</button>
+      </div>
+
       <!-- Gallery grid (click any tile to open the lightbox) -->
       <div id="gallery" class="grid grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-5">
         <!-- TILE 1 (wide feature) -->
-        <button type="button" class="gallery-item fade-up group relative col-span-2 lg:row-span-2 rounded-sm overflow-hidden border-2 border-transparent hover:border-gold transition-all duration-300 bg-ink-900 text-left" data-src="images/proj32.jpg" data-caption="Custom Kentucky stone veneer façade — finished hillside residence">
+        <button type="button" class="gallery-item fade-up group relative col-span-2 lg:row-span-2 rounded-sm overflow-hidden border-2 border-transparent hover:border-gold transition-all duration-300 bg-ink-900 text-left" data-cat="veneer" data-src="images/proj32.jpg" data-caption="Custom Kentucky stone veneer façade — finished hillside residence">
           <div class="aspect-[4/3] lg:h-full overflow-hidden">
             <img src="images/proj32.jpg" loading="lazy" decoding="async" alt="Finished Kentucky stone veneer façade on a Los Angeles home" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" />
           </div>
@@ -279,7 +426,7 @@
         </button>
 
         <!-- TILE 2 -->
-        <button type="button" class="gallery-item fade-up group relative rounded-sm overflow-hidden border-2 border-transparent hover:border-gold transition-all duration-300 bg-ink-900 text-left" data-src="images/proj31.jpg" data-caption="Stone veneer façade and garage frontage — high-end residence">
+        <button type="button" class="gallery-item fade-up group relative rounded-sm overflow-hidden border-2 border-transparent hover:border-gold transition-all duration-300 bg-ink-900 text-left" data-cat="veneer" data-src="images/proj31.jpg" data-caption="Stone veneer façade and garage frontage — high-end residence">
           <div class="aspect-square overflow-hidden">
             <img src="images/proj31.jpg" loading="lazy" decoding="async" alt="Stone veneer façade and garage frontage" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" />
           </div>
@@ -288,7 +435,7 @@
         </button>
 
         <!-- TILE 3 -->
-        <button type="button" class="gallery-item fade-up group relative rounded-sm overflow-hidden border-2 border-transparent hover:border-gold transition-all duration-300 bg-ink-900 text-left" data-src="images/proj27.jpg" data-caption="Natural stone retaining walls and hillside hardscape">
+        <button type="button" class="gallery-item fade-up group relative rounded-sm overflow-hidden border-2 border-transparent hover:border-gold transition-all duration-300 bg-ink-900 text-left" data-cat="hardscape" data-src="images/proj27.jpg" data-caption="Natural stone retaining walls and hillside hardscape">
           <div class="aspect-square overflow-hidden">
             <img src="images/proj27.jpg" loading="lazy" decoding="async" alt="Natural stone retaining walls on a hillside property" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" />
           </div>
@@ -297,7 +444,7 @@
         </button>
 
         <!-- TILE 4 -->
-        <button type="button" class="gallery-item fade-up group relative rounded-sm overflow-hidden border-2 border-transparent hover:border-gold transition-all duration-300 bg-ink-900 text-left" data-src="images/proj01.jpg" data-caption="Hand-set flagstone patio — natural stone hardscape">
+        <button type="button" class="gallery-item fade-up group relative rounded-sm overflow-hidden border-2 border-transparent hover:border-gold transition-all duration-300 bg-ink-900 text-left" data-cat="hardscape" data-src="images/proj01.jpg" data-caption="Hand-set flagstone patio — natural stone hardscape">
           <div class="aspect-square overflow-hidden">
             <img src="images/proj01.jpg" loading="lazy" decoding="async" alt="Hand-set flagstone patio" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" />
           </div>
@@ -306,7 +453,7 @@
         </button>
 
         <!-- TILE 5 -->
-        <button type="button" class="gallery-item fade-up group relative rounded-sm overflow-hidden border-2 border-transparent hover:border-gold transition-all duration-300 bg-ink-900 text-left" data-src="images/proj08.jpg" data-caption="Hand-formed masonry archway with smooth stucco finish">
+        <button type="button" class="gallery-item fade-up group relative rounded-sm overflow-hidden border-2 border-transparent hover:border-gold transition-all duration-300 bg-ink-900 text-left" data-cat="architectural" data-src="images/proj08.jpg" data-caption="Hand-formed masonry archway with smooth stucco finish">
           <div class="aspect-square overflow-hidden">
             <img src="images/proj08.jpg" loading="lazy" decoding="async" alt="Hand-formed masonry archway with stucco finish" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" />
           </div>
@@ -315,7 +462,7 @@
         </button>
 
         <!-- TILE 6 -->
-        <button type="button" class="gallery-item fade-up group relative rounded-sm overflow-hidden border-2 border-transparent hover:border-gold transition-all duration-300 bg-ink-900 text-left" data-src="images/proj11.jpg" data-caption="Saltillo terracotta tile walkway over a fresh mortar bed">
+        <button type="button" class="gallery-item fade-up group relative rounded-sm overflow-hidden border-2 border-transparent hover:border-gold transition-all duration-300 bg-ink-900 text-left" data-cat="hardscape" data-src="images/proj11.jpg" data-caption="Saltillo terracotta tile walkway over a fresh mortar bed">
           <div class="aspect-square overflow-hidden">
             <img src="images/proj11.jpg" loading="lazy" decoding="async" alt="Saltillo terracotta tile walkway" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" />
           </div>
@@ -324,7 +471,7 @@
         </button>
 
         <!-- TILE 7 -->
-        <button type="button" class="gallery-item fade-up group relative rounded-sm overflow-hidden border-2 border-transparent hover:border-gold transition-all duration-300 bg-ink-900 text-left" data-src="images/proj23.jpg" data-caption="Structural CMU piers floated dead-level — precision foundation work">
+        <button type="button" class="gallery-item fade-up group relative rounded-sm overflow-hidden border-2 border-transparent hover:border-gold transition-all duration-300 bg-ink-900 text-left" data-cat="structural" data-src="images/proj23.jpg" data-caption="Structural CMU piers floated dead-level — precision foundation work">
           <div class="aspect-square overflow-hidden">
             <img src="images/proj23.jpg" loading="lazy" decoding="async" alt="Structural CMU block piers checked dead-level" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" />
           </div>
@@ -333,7 +480,7 @@
         </button>
 
         <!-- TILE 8 -->
-        <button type="button" class="gallery-item fade-up group relative rounded-sm overflow-hidden border-2 border-transparent hover:border-gold transition-all duration-300 bg-ink-900 text-left" data-src="images/proj02.jpg" data-caption="Curved free-standing wall floated smooth and true">
+        <button type="button" class="gallery-item fade-up group relative rounded-sm overflow-hidden border-2 border-transparent hover:border-gold transition-all duration-300 bg-ink-900 text-left" data-cat="structural" data-src="images/proj02.jpg" data-caption="Curved free-standing wall floated smooth and true">
           <div class="aspect-square overflow-hidden">
             <img src="images/proj02.jpg" loading="lazy" decoding="async" alt="Curved free-standing wall floated smooth" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" />
           </div>
@@ -342,7 +489,7 @@
         </button>
 
         <!-- TILE 9 -->
-        <button type="button" class="gallery-item fade-up group relative rounded-sm overflow-hidden border-2 border-transparent hover:border-gold transition-all duration-300 bg-ink-900 text-left" data-src="images/proj13.jpg" data-caption="Arched masonry passage between courtyard spaces">
+        <button type="button" class="gallery-item fade-up group relative rounded-sm overflow-hidden border-2 border-transparent hover:border-gold transition-all duration-300 bg-ink-900 text-left" data-cat="architectural" data-src="images/proj13.jpg" data-caption="Arched masonry passage between courtyard spaces">
           <div class="aspect-square overflow-hidden">
             <img src="images/proj13.jpg" loading="lazy" decoding="async" alt="Arched masonry passage in a courtyard" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" />
           </div>
@@ -351,7 +498,7 @@
         </button>
 
         <!-- TILE 10 -->
-        <button type="button" class="gallery-item fade-up group relative rounded-sm overflow-hidden border-2 border-transparent hover:border-gold transition-all duration-300 bg-ink-900 text-left" data-src="images/proj35.jpg" data-caption="Multi-level wall float — dead-flat smooth stucco finish">
+        <button type="button" class="gallery-item fade-up group relative rounded-sm overflow-hidden border-2 border-transparent hover:border-gold transition-all duration-300 bg-ink-900 text-left" data-cat="structural" data-src="images/proj35.jpg" data-caption="Multi-level wall float — dead-flat smooth stucco finish">
           <div class="aspect-square overflow-hidden">
             <img src="images/proj35.jpg" loading="lazy" decoding="async" alt="Multi-level smooth stucco wall float" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" />
           </div>
@@ -360,7 +507,7 @@
         </button>
 
         <!-- TILE 11 -->
-        <button type="button" class="gallery-item fade-up group relative rounded-sm overflow-hidden border-2 border-transparent hover:border-gold transition-all duration-300 bg-ink-900 text-left" data-src="images/proj05.jpg" data-caption="Garden archway and gateway in a mature landscape">
+        <button type="button" class="gallery-item fade-up group relative rounded-sm overflow-hidden border-2 border-transparent hover:border-gold transition-all duration-300 bg-ink-900 text-left" data-cat="architectural" data-src="images/proj05.jpg" data-caption="Garden archway and gateway in a mature landscape">
           <div class="aspect-square overflow-hidden">
             <img src="images/proj05.jpg" loading="lazy" decoding="async" alt="Masonry garden archway and gateway" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" />
           </div>
@@ -369,12 +516,66 @@
         </button>
 
         <!-- TILE 12 -->
-        <button type="button" class="gallery-item fade-up group relative rounded-sm overflow-hidden border-2 border-transparent hover:border-gold transition-all duration-300 bg-ink-900 text-left" data-src="images/proj30.jpg" data-caption="Framed addition set on engineered CMU block piers">
+        <button type="button" class="gallery-item fade-up group relative rounded-sm overflow-hidden border-2 border-transparent hover:border-gold transition-all duration-300 bg-ink-900 text-left" data-cat="structural" data-src="images/proj30.jpg" data-caption="Framed addition set on engineered CMU block piers">
           <div class="aspect-square overflow-hidden">
             <img src="images/proj30.jpg" loading="lazy" decoding="async" alt="Framed addition set on CMU block piers" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" />
           </div>
           <div class="absolute inset-0 bg-gradient-to-t from-ink-950/85 to-transparent"></div>
           <div class="absolute bottom-0 left-0 right-0 p-4"><span class="text-[0.6rem] uppercase tracking-widest2 text-gold font-semibold">Structural Block</span></div>
+        </button>
+
+        <!-- TILE 13 -->
+        <button type="button" class="gallery-item fade-up group relative rounded-sm overflow-hidden border-2 border-transparent hover:border-gold transition-all duration-300 bg-ink-900 text-left" data-cat="veneer" data-src="images/proj34.jpg" data-caption="Completed Austin stone veneer façade — three-story hillside residence">
+          <div class="aspect-square overflow-hidden">
+            <img src="images/proj34.jpg" loading="lazy" decoding="async" alt="Completed light stone veneer façade on a three-story hillside home" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" />
+          </div>
+          <div class="absolute inset-0 bg-gradient-to-t from-ink-950/85 to-transparent"></div>
+          <div class="absolute bottom-0 left-0 right-0 p-4"><span class="text-[0.6rem] uppercase tracking-widest2 text-gold font-semibold">Stone Veneer</span></div>
+        </button>
+
+        <!-- TILE 14 -->
+        <button type="button" class="gallery-item fade-up group relative rounded-sm overflow-hidden border-2 border-transparent hover:border-gold transition-all duration-300 bg-ink-900 text-left" data-cat="hardscape" data-src="images/proj16.jpg" data-caption="Bluestone flagstone patio with a natural stone-veneer seat wall">
+          <div class="aspect-square overflow-hidden">
+            <img src="images/proj16.jpg" loading="lazy" decoding="async" alt="Bluestone flagstone patio with natural stone seat wall" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" />
+          </div>
+          <div class="absolute inset-0 bg-gradient-to-t from-ink-950/85 to-transparent"></div>
+          <div class="absolute bottom-0 left-0 right-0 p-4"><span class="text-[0.6rem] uppercase tracking-widest2 text-gold font-semibold">Hardscape</span></div>
+        </button>
+
+        <!-- TILE 15 -->
+        <button type="button" class="gallery-item fade-up group relative rounded-sm overflow-hidden border-2 border-transparent hover:border-gold transition-all duration-300 bg-ink-900 text-left" data-cat="architectural" data-src="images/proj29.jpg" data-caption="Custom horizontal-slat entry gate on a welded steel frame">
+          <div class="aspect-square overflow-hidden">
+            <img src="images/proj29.jpg" loading="lazy" decoding="async" alt="Custom horizontal wood-slat entry gate with steel frame" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" />
+          </div>
+          <div class="absolute inset-0 bg-gradient-to-t from-ink-950/85 to-transparent"></div>
+          <div class="absolute bottom-0 left-0 right-0 p-4"><span class="text-[0.6rem] uppercase tracking-widest2 text-gold font-semibold">Architectural</span></div>
+        </button>
+
+        <!-- TILE 16 -->
+        <button type="button" class="gallery-item fade-up group relative rounded-sm overflow-hidden border-2 border-transparent hover:border-gold transition-all duration-300 bg-ink-900 text-left" data-cat="veneer" data-src="images/proj33.jpg" data-caption="Stone veneer base and finished stair entry — completed hillside home">
+          <div class="aspect-square overflow-hidden">
+            <img src="images/proj33.jpg" loading="lazy" decoding="async" alt="Stone veneer base and finished concrete entry stairs" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" />
+          </div>
+          <div class="absolute inset-0 bg-gradient-to-t from-ink-950/85 to-transparent"></div>
+          <div class="absolute bottom-0 left-0 right-0 p-4"><span class="text-[0.6rem] uppercase tracking-widest2 text-gold font-semibold">Stone Veneer</span></div>
+        </button>
+
+        <!-- TILE 17 -->
+        <button type="button" class="gallery-item fade-up group relative rounded-sm overflow-hidden border-2 border-transparent hover:border-gold transition-all duration-300 bg-ink-900 text-left" data-cat="hardscape" data-src="images/proj12.jpg" data-caption="Saltillo terracotta tile steps and landing over a mortar bed">
+          <div class="aspect-square overflow-hidden">
+            <img src="images/proj12.jpg" loading="lazy" decoding="async" alt="Saltillo terracotta tile steps and landing" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" />
+          </div>
+          <div class="absolute inset-0 bg-gradient-to-t from-ink-950/85 to-transparent"></div>
+          <div class="absolute bottom-0 left-0 right-0 p-4"><span class="text-[0.6rem] uppercase tracking-widest2 text-gold font-semibold">Hardscape</span></div>
+        </button>
+
+        <!-- TILE 18 -->
+        <button type="button" class="gallery-item fade-up group relative rounded-sm overflow-hidden border-2 border-transparent hover:border-gold transition-all duration-300 bg-ink-900 text-left" data-cat="architectural" data-src="images/proj06.jpg" data-caption="Hand-formed stucco archway framing a garden passage">
+          <div class="aspect-square overflow-hidden">
+            <img src="images/proj06.jpg" loading="lazy" decoding="async" alt="Hand-formed stucco archway in a garden wall" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" />
+          </div>
+          <div class="absolute inset-0 bg-gradient-to-t from-ink-950/85 to-transparent"></div>
+          <div class="absolute bottom-0 left-0 right-0 p-4"><span class="text-[0.6rem] uppercase tracking-widest2 text-gold font-semibold">Architectural</span></div>
         </button>
       </div>
 
@@ -383,6 +584,97 @@
           Start Your Project
           <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/></svg>
         </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ AREAS WE SERVE ============ -->
+  <section id="areas" class="bg-ink-950 text-white py-20 lg:py-24 relative overflow-hidden">
+    <div class="absolute inset-0 opacity-[0.06]" style="background-image:linear-gradient(#c9a24b 1px,transparent 1px),linear-gradient(90deg,#c9a24b 1px,transparent 1px);background-size:48px 24px;"></div>
+    <div class="relative max-w-7xl mx-auto px-6">
+      <div class="max-w-3xl mb-12 fade-up">
+        <p class="text-gold font-semibold tracking-widest2 uppercase text-xs mb-4">Where We Work</p>
+        <h2 class="font-display text-3xl sm:text-5xl font-bold leading-tight mb-5">Serving Greater Los Angeles.</h2>
+        <p class="text-mist-300 text-lg leading-relaxed">From the hillside homes of the Eastside to the estates of the San Gabriel Valley, Hattenburg Masonry brings the same standard of craftsmanship across the region. Don't see your neighborhood? <a href="#contact" class="text-gold underline decoration-gold/40 underline-offset-4 hover:decoration-gold">Reach out</a> — we travel for the right project.</p>
+      </div>
+      <div class="fade-up flex flex-wrap gap-2.5">
+        <span class="border border-white/15 text-mist-200 text-sm px-4 py-2 rounded-sm hover:border-gold hover:text-gold transition-colors">Los Angeles</span>
+        <span class="border border-white/15 text-mist-200 text-sm px-4 py-2 rounded-sm hover:border-gold hover:text-gold transition-colors">Pasadena</span>
+        <span class="border border-white/15 text-mist-200 text-sm px-4 py-2 rounded-sm hover:border-gold hover:text-gold transition-colors">Glendale</span>
+        <span class="border border-white/15 text-mist-200 text-sm px-4 py-2 rounded-sm hover:border-gold hover:text-gold transition-colors">Burbank</span>
+        <span class="border border-white/15 text-mist-200 text-sm px-4 py-2 rounded-sm hover:border-gold hover:text-gold transition-colors">La Cañada Flintridge</span>
+        <span class="border border-white/15 text-mist-200 text-sm px-4 py-2 rounded-sm hover:border-gold hover:text-gold transition-colors">San Marino</span>
+        <span class="border border-white/15 text-mist-200 text-sm px-4 py-2 rounded-sm hover:border-gold hover:text-gold transition-colors">Arcadia</span>
+        <span class="border border-white/15 text-mist-200 text-sm px-4 py-2 rounded-sm hover:border-gold hover:text-gold transition-colors">South Pasadena</span>
+        <span class="border border-white/15 text-mist-200 text-sm px-4 py-2 rounded-sm hover:border-gold hover:text-gold transition-colors">Sherman Oaks</span>
+        <span class="border border-white/15 text-mist-200 text-sm px-4 py-2 rounded-sm hover:border-gold hover:text-gold transition-colors">Studio City</span>
+        <span class="border border-white/15 text-mist-200 text-sm px-4 py-2 rounded-sm hover:border-gold hover:text-gold transition-colors">Los Feliz</span>
+        <span class="border border-white/15 text-mist-200 text-sm px-4 py-2 rounded-sm hover:border-gold hover:text-gold transition-colors">Silver Lake</span>
+        <span class="border border-white/15 text-mist-200 text-sm px-4 py-2 rounded-sm hover:border-gold hover:text-gold transition-colors">Highland Park</span>
+        <span class="border border-white/15 text-mist-200 text-sm px-4 py-2 rounded-sm hover:border-gold hover:text-gold transition-colors">Eagle Rock</span>
+        <span class="border border-white/15 text-mist-200 text-sm px-4 py-2 rounded-sm hover:border-gold hover:text-gold transition-colors">Montrose</span>
+        <span class="border border-white/15 text-mist-200 text-sm px-4 py-2 rounded-sm hover:border-gold hover:text-gold transition-colors">&amp; surrounding areas</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FAQ ============ -->
+  <section id="faq" class="texture-grid py-24 lg:py-32">
+    <div class="max-w-3xl mx-auto px-6">
+      <div class="mb-14 fade-up">
+        <p class="text-brick font-semibold tracking-widest2 uppercase text-xs mb-4">Common Questions</p>
+        <h2 class="font-display text-3xl sm:text-5xl font-bold leading-tight mb-5">Frequently Asked Questions</h2>
+        <p class="text-ink-700 text-lg leading-relaxed">Straight answers on licensing, service area, estimates, and how we work.</p>
+      </div>
+
+      <div class="space-y-4">
+        <details class="faq-item fade-up bg-white border border-mist-200 rounded-sm px-6 group open:border-gold transition-colors">
+          <summary class="flex items-center justify-between gap-4 py-5 font-display text-lg font-semibold">
+            Are you a licensed masonry contractor?
+            <svg class="faq-icon w-5 h-5 text-gold shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15"/></svg>
+          </summary>
+          <p class="text-ink-700 leading-relaxed pb-6 -mt-1">Yes. Hattenburg Masonry LLC holds an active California <span class="font-semibold text-ink-900">C-29 Masonry Contractor license (#1066248)</span>, which covers the full range of cementitious applications — from structural block to finish stonework.</p>
+        </details>
+
+        <details class="faq-item fade-up bg-white border border-mist-200 rounded-sm px-6 group open:border-gold transition-colors">
+          <summary class="flex items-center justify-between gap-4 py-5 font-display text-lg font-semibold">
+            What areas do you serve?
+            <svg class="faq-icon w-5 h-5 text-gold shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15"/></svg>
+          </summary>
+          <p class="text-ink-700 leading-relaxed pb-6 -mt-1">We serve Greater Los Angeles, including Pasadena, Glendale, Burbank, La Cañada Flintridge, San Marino, Arcadia, Sherman Oaks, Studio City, Los Feliz, and Silver Lake. See the <a href="#areas" class="text-brick underline underline-offset-4">service-area list</a> above.</p>
+        </details>
+
+        <details class="faq-item fade-up bg-white border border-mist-200 rounded-sm px-6 group open:border-gold transition-colors">
+          <summary class="flex items-center justify-between gap-4 py-5 font-display text-lg font-semibold">
+            Do you provide free estimates?
+            <svg class="faq-icon w-5 h-5 text-gold shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15"/></svg>
+          </summary>
+          <p class="text-ink-700 leading-relaxed pb-6 -mt-1">Yes. <a href="#contact" class="text-brick underline underline-offset-4">Request a consultation</a> through the form on this site or call <a href="tel:+13235421884" class="text-brick underline underline-offset-4">323-542-1884</a>, and we'll review your project and follow up — typically within one business day — to schedule a walkthrough and estimate.</p>
+        </details>
+
+        <details class="faq-item fade-up bg-white border border-mist-200 rounded-sm px-6 group open:border-gold transition-colors">
+          <summary class="flex items-center justify-between gap-4 py-5 font-display text-lg font-semibold">
+            How long does a typical masonry project take?
+            <svg class="faq-icon w-5 h-5 text-gold shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15"/></svg>
+          </summary>
+          <p class="text-ink-700 leading-relaxed pb-6 -mt-1">It depends on scope. A stone-veneer fireplace or feature wall may take one to two weeks, while a full façade or structural project runs longer. We give a realistic schedule with your estimate and keep you updated throughout.</p>
+        </details>
+
+        <details class="faq-item fade-up bg-white border border-mist-200 rounded-sm px-6 group open:border-gold transition-colors">
+          <summary class="flex items-center justify-between gap-4 py-5 font-display text-lg font-semibold">
+            Can you match the color of existing mortar?
+            <svg class="faq-icon w-5 h-5 text-gold shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15"/></svg>
+          </summary>
+          <p class="text-ink-700 leading-relaxed pb-6 -mt-1">Yes. We use exact <span class="font-semibold text-ink-900">Solomon &amp; Davis</span> mortar color matching so repairs, additions, and repointing blend seamlessly into the original work.</p>
+        </details>
+
+        <details class="faq-item fade-up bg-white border border-mist-200 rounded-sm px-6 group open:border-gold transition-colors">
+          <summary class="flex items-center justify-between gap-4 py-5 font-display text-lg font-semibold">
+            Do you take on both residential and commercial work?
+            <svg class="faq-icon w-5 h-5 text-gold shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15"/></svg>
+          </summary>
+          <p class="text-ink-700 leading-relaxed pb-6 -mt-1">Our focus is high-end residential masonry for homeowners, architects, and builders, though we also take on select commercial and architectural projects. Reach out with your details and we'll let you know if it's a fit.</p>
+        </details>
       </div>
     </div>
   </section>
@@ -437,6 +729,8 @@
           <input type="hidden" name="_subject" value="New consultation request — Hattenburg Masonry" />
           <input type="hidden" name="_captcha" value="false" />
           <input type="hidden" name="_template" value="table" />
+          <!-- After a successful submit, send the visitor to a branded confirmation page -->
+          <input type="hidden" name="_next" value="https://tobyhattenburg-beep.github.io/hattenburg-masonry/thank-you.html" />
           <input type="text" name="_honey" style="display:none" />
           <div class="grid sm:grid-cols-2 gap-4">
             <div>
@@ -555,24 +849,41 @@
 
     document.getElementById('year').textContent = new Date().getFullYear();
 
-    /* ---- Portfolio lightbox ---- */
+    /* ---- Portfolio category filter ---- */
     (function () {
-      const items = Array.from(document.querySelectorAll('.gallery-item'));
-      if (!items.length) return;
+      const chips = Array.from(document.querySelectorAll('.filter-chip'));
+      const tiles = Array.from(document.querySelectorAll('.gallery-item'));
+      if (!chips.length) return;
+      chips.forEach(chip => chip.addEventListener('click', () => {
+        const cat = chip.dataset.filter;
+        chips.forEach(c => c.classList.toggle('is-active', c === chip));
+        tiles.forEach(t => t.classList.toggle('is-hidden', cat !== 'all' && t.dataset.cat !== cat));
+      }));
+    })();
+
+    /* ---- Portfolio lightbox (navigates only currently-visible tiles) ---- */
+    (function () {
+      const allItems = Array.from(document.querySelectorAll('.gallery-item'));
+      if (!allItems.length) return;
       const lb = document.getElementById('lightbox');
       const lbImg = document.getElementById('lbImg');
       const lbCap = document.getElementById('lbCaption');
+      let visible = [];
       let idx = 0;
 
+      const visibleItems = () => allItems.filter(el => !el.classList.contains('is-hidden'));
       const show = (i) => {
-        idx = (i + items.length) % items.length;
-        const btn = items[idx];
+        if (!visible.length) return;
+        idx = (i + visible.length) % visible.length;
+        const btn = visible[idx];
         lbImg.src = btn.dataset.src;
         lbImg.alt = btn.dataset.caption || '';
         lbCap.textContent = btn.dataset.caption || '';
       };
-      const open = (i) => {
-        show(i);
+      const open = (btn) => {
+        visible = visibleItems();
+        const start = visible.indexOf(btn);
+        show(start < 0 ? 0 : start);
         lb.classList.remove('hidden');
         lb.classList.add('flex');
         document.body.style.overflow = 'hidden';
@@ -584,7 +895,7 @@
         lbImg.src = '';
       };
 
-      items.forEach((btn, i) => btn.addEventListener('click', () => open(i)));
+      allItems.forEach((btn) => btn.addEventListener('click', () => open(btn)));
       document.getElementById('lbClose').addEventListener('click', close);
       document.getElementById('lbPrev').addEventListener('click', () => show(idx - 1));
       document.getElementById('lbNext').addEventListener('click', () => show(idx + 1));
